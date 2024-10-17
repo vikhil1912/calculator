@@ -38,7 +38,7 @@ function evaluate(){
     if(valid_inp()==true){
         let num=eval(dis);
         let ans=num.toString();
-        document.querySelector(".display").innerHTML=ans;
+        document.querySelector(".display").innerHTML=ans.substring(0,8);
         dis="";
     }
     else{
