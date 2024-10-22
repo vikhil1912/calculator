@@ -11,7 +11,7 @@ for(let e of buttons){
         }
         else if(isValid(event)==true){
         dis+=event;
-        document.querySelector(".display").innerHTML=dis.substring(dis.length-8,dis.length);
+        document.querySelector(".display").innerHTML=dis.substring(dis.length-7,dis.length);
     }
     });
 }
@@ -26,7 +26,7 @@ document.addEventListener("keydown",function(event){
     else if(isValid(event1)==true){
         var char = event.key;
         dis+=char;
-        document.querySelector(".display").innerHTML=dis.substring(dis.length-8,dis.length);
+        document.querySelector(".display").innerHTML=dis.substring(dis.length-7,dis.length);
     }
 });
 function isValid(event1){
@@ -38,7 +38,7 @@ function evaluate(){
     if(valid_inp()==true){
         let num=eval(dis);
         let ans=num.toString();
-        document.querySelector(".display").innerHTML=ans.substring(0,7);
+        document.querySelector(".display").innerHTML=ans.substring(0,8);
         dis="";
     }
     else{
@@ -48,7 +48,7 @@ function evaluate(){
 function remove_last(){
     dis = dis.substring(0,dis.length-1);
     if(dis.length===0)document.querySelector(".display").innerHTML="0";
-    else document.querySelector(".display").innerHTML=dis.substring(dis.length-8,dis.length);
+    else document.querySelector(".display").innerHTML=dis.substring(dis.length-7,dis.length);
 }
 function valid_inp(){
     let n=dis.length;
