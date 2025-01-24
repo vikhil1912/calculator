@@ -15,6 +15,7 @@ for(let e of buttons){
     }
     });
 }
+
 document.addEventListener("keydown",function(event){
     var event1=event.key;
     if(event1==="Enter")evaluate();
