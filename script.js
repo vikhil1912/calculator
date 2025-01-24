@@ -39,7 +39,7 @@ function evaluate(){
         let num=eval(dis);
         let ans=num.toString();
         document.querySelector(".display").innerHTML=ans.substring(0,8);
-        
+        dis=ans;
     }
     else{
         document.querySelector(".display").innerHTML="Invalid";
